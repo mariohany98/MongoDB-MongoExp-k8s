@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: mongo
+        image: {{ .Values.mongodb.image.repository }}
         ports:
         - containerPort: 27017
         env:
